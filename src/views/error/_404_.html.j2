@@ -1,5 +1,11 @@
 {% extends "base/layout" %} 
 
 {% block page %}
-<img width="250px" height="180px" src="/static/img/mario_404.gif">
+<br>
+<h1 style="text-align: center;">Ops...</h1>
+<div style="text-align: center;">
+    <img width="250px" height="180px" src="/static/img/mario_404_.gif" alt="404 Error">
+    <hr style="width: 70%; background-color:white;">
+    <p>Infelizmente, não encontramos a rota <b>{{ uri }}</b> requerida.</p>
+</div>
 {% endblock %}
