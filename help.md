@@ -48,3 +48,40 @@ src/
 cnosegui resolver o problema da biblioteca templates N está importando o minininja.
 <br>Verifiquei <a href="https://github.com/rwf2/Rocket/blob/master/contrib/dyn_templates/Cargo.toml">neste link</a> como chatgpt indicou olhar no repo do rocket, e verifiquei que tinha que atualizar manualmente a lib pra versao mais atual. <br>
 Depois disso, rodou de boas.<br>
+
+<hr>
+
+#### 12/10/24, 08:55
+atual config do sistema:
+
+```sh
+src/
+├── controllers
+│   ├── home_controller.rs
+│   └── mod.rs
+├── main.rs
+└── views
+    ├── base
+    │   ├── footer.html.j2
+    │   ├── layout.html.j2
+    │   └── nav.html.j2
+    ├── home
+    │   ├── base
+    │   │   ├── error
+    │   │   │   └── _404.html.j2
+    │   │   ├── footer.html.j2
+    │   │   ├── layout.html.j2
+    │   │   └── nav.html.j2
+    │   └── index.html.j2
+    ├── index.html.j2
+    ├── sim.html.j2
+    └── static
+        ├── app.js
+        ├── css
+        │   └── style.css
+        └── js
+```
+
+eu tentei de diversas maneiras instalar o `cargo-watch` para ter um autoreload no app, mas não conseguir pelo celular, msm usando arch.<br>
+creio que rode pelo pc, contudo, vi que o rust não compila html.j2, eu edito ele e ele é aceito, ele muda no server, é interessante. Logo vejo que não preciso disso.<br>
+mudei o template de `tera` para `minininja`, em homenagem ao jinja do python. creio que seja melhor.
