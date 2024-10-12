@@ -1,7 +1,6 @@
 #[macro_use] extern crate rocket;
 use rocket_dyn_templates::{Template};
-
-
+use rocket::fs::FileServer;
 mod controllers;
 
 
@@ -9,5 +8,6 @@ mod controllers;
 fn rocket() -> _ {
     rocket::build()
     .attach(Template::fairing())
-    .mount("/", routes![controllers::home_controller::hello_get])
+    .mount("/static",FileServer::from("src/views/static"))
+    .mount("/", routes![controllers::home_controller::home_get])
 }

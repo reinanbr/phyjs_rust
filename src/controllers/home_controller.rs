@@ -1,7 +1,8 @@
-use rocket_dyn_templates::{Template, context};
+
+use rocket_dyn_templates::{context, Template};
 
 
-#[get("/hello/<name>")]
-pub fn hello_get(name: &str) -> Template{
-    Template::render("tera/pages/home", context! { user_name: name })
+#[get("/")]
+pub fn home_get() -> Template{
+    Template::render("index",context!{title:"Página Inicial"})
 }

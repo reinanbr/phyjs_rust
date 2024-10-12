@@ -42,3 +42,9 @@ src/
 6. deh um `cargo build --release` ou `cargo run` para rodar de vez.
 <br>um compila o outro compila e roda.
 
+<br>
+<hr>
+22:55<br>
+cnosegui resolver o problema da biblioteca templates N está importando o minininja.
+<br>Verifiquei <a href="https://github.com/rwf2/Rocket/blob/master/contrib/dyn_templates/Cargo.toml">neste link</a> como chatgpt indicou olhar no repo do rocket, e verifiquei que tinha que atualizar manualmente a lib pra versao mais atual. <br>
+Depois disso, rodou de boas.<br>
