@@ -10,6 +10,3 @@ rocket = "0.5.0"
 version = "0.2.0"
 features = ["handlebars", "tera", "minijinja"]
 
-[dev-dependencies]
-cargo-watch = "8.5.3"
-

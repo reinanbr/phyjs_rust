@@ -85,3 +85,18 @@ src/
 eu tentei de diversas maneiras instalar o `cargo-watch` para ter um autoreload no app, mas não conseguir pelo celular, msm usando arch.<br>
 creio que rode pelo pc, contudo, vi que o rust não compila html.j2, eu edito ele e ele é aceito, ele muda no server, é interessante. Logo vejo que não preciso disso.<br>
 mudei o template de `tera` para `minininja`, em homenagem ao jinja do python. creio que seja melhor.
+<br>
+O `cargo-watch` funcionou de boas no pc, com `cargo install cargo-watch --locked`.<br>
+
+O repsitório de
+```sh
+├── home
+│   ├── base
+│   │   ├── error
+│   │   │   └── _404.html.j2
+│   │   ├── footer.html.j2
+│   │   ├── layout.html.j2
+│   │   └── nav.html.j2
+│   └── index.html.j2
+```
+serve apenas para Reinan se orientar na construção dos dir dos templates.
