@@ -3,6 +3,12 @@ name = "phyjs"
 version = "0.1.0"
 edition = "2021"
 
+# to vercel
+[[bin]]
+name = "main"
+path = "src/main.rs"  # Ajuste o caminho se necessário
+
+
 [dependencies]
 rocket = "0.5.0"
 tokio = { version = "1", features = ["full"] }
@@ -11,3 +17,4 @@ tokio = { version = "1", features = ["full"] }
 version = "0.2.0"
 features = ["handlebars", "tera", "minijinja"]
 
+	
