@@ -100,3 +100,9 @@ O repsitório de
 │   └── index.html.j2
 ```
 serve apenas para Reinan se orientar na construção dos dir dos templates.
+
+<hr>
+### 22:29
+
+- Infelizmente tive uma desilução com Rust em Vercel e vi que o Vercel só aceita Functions API em Rust, mas não um projeto MVC em Rust.<br>
+Infelizmente, este projeto irá ser descontinuado aqui.
